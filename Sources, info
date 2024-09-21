@@ -1,0 +1,13 @@
+Sources:
+
+gold and silver data: stooq.com
+real dollar strenght data, inflation: https://fred.stlouisfed.org/series/FPCPITOTLZGUSA
+
+final_dollar_vs_metals.csv - data for comparing dollar strenght with metal prices
+inflation_vs_metals - data for comparing inflation with metal prices
+
+correlation heatmap -
+    -gold, silver, platinum, Crude Oil WTI - NYMEX (CL.F), spx, nasdaq, copper (High Grade Copper - COMEX (HG.F)), iShares USD Treasury Bond 1-3yr UCITS ETF (IBTA.UK)
+    -period - 1.1.2018/1.1.2023
+    -source- stooq.com
+    -using daily closes
