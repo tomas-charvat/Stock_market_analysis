@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="SqlDialectMappings">
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/202a58fb-b55e-480d-83ea-a0e592e310a1/console.sql" dialect="BigQuery" />
-    <file url="file://$APPLICATION_CONFIG_DIR$/consoles/db/e4737d6a-75f7-4923-a9c1-71cd6654fcee/console.sql" dialect="BigQuery" />
     <file url="PROJECT" dialect="BigQuery" />
   </component>
 </project>
