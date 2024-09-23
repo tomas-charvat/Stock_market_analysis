@@ -11,3 +11,9 @@ correlation heatmap -
     -period - 1.1.2018/1.1.2023
     -source- stooq.com
     -using daily closes
+    - https://www.investing.com/commodities/copper-historical-data
+    -https://www.investing.com/indices/nq-100-historical-data
+    -https://www.investing.com/indices/us-spx-500-historical-data
+    -https://www.investing.com/commodities/crude-oil-historical-data
+    -https://stooq.com/q/d/?s=ibta.uk
+    -
