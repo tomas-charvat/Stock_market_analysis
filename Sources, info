@@ -1,11 +1,71 @@
+
+Project overview:
+
+Creating a dataset for line chart visualization:
+    1)Downloaded daily data from stooq.com for gold, silver, nasdaq and S&P500
+    2)Processed the data(data_proccesing.ipynb), checked for null values and merged all the files into 1 dataframe called merged_close_df
+    3)Now that we have dataset with only close prices i used the interpolate function with linear method to connect the prices on days where the assets are not being traded to create continuous line
+    4)Then i created a quick linechart in Line_chart.py just to check for obvious mistakes
+    5)Lastly i plotted the dataset in tableau public
+    6)The goal was to show the overall trend and visually compare returns of the 4 assets
+    7)link to visualization -
+Creating dataset for another line chart:
+    1)Used the gold and silver data from above
+    2)Created dataset with gold and silver prices
+    3)Used datetime and timedelta to filter data for the past year
+    4)Then used the corr() function to calculate the correlation with 30 day rolling window between the 2 assets (2023-10-20 to 2024-09-10)
+    5)The final dataset is final_corr_df.csv
+    6)link to visualization -
+
+Creating dataset for metals vs inflation:
+    1)Downloading data from stooq.com for metals and https://fred.stlouisfed.org for inflation data (yearly close prices)
+    2)Timeframe was 1990-2023
+    3)Asked claude.ai to adjust my inflation data because it was in a different date format than my metals data as you can see in inflation.csv compared to xauusd_y.csv
+    4)Procesed the data to get 1 dataset with close prices and inflation (inflation_vs_metals.csv)
+    5)Goal was to visually compare the price progress of metals compared to inflation so see if there is any correlation
+    6)link to visualization -
+
+Creating dataset for real dollar index vs metals:
+    1)Downloading data from stooq.com for metals and https://fred.stlouisfed.org for real dollar index data (monthly close prices)
+    2)Time frame was 2006-2023
+    3)Processed the data in data.ipybn and got the final dataframe - final_dollar_vs_metals.csv
+    4)Goal was to again visually compare the relationship between metals and real dollar index as they correlate with each other
+    5)Also the goal was to show that you can make trading desicions(metals) based on whats happening to the dollar strength index
+    6)Link to visualization -
+
+Creating dataset for heatmap vizualization:
+    1)  -gold, silver, platinum, Crude Oil WTI - NYMEX (CL.F), spx, nasdaq, copper (High Grade Copper - COMEX (HG.F)), iShares USD Treasury Bond 1-3yr UCITS ETF (IBTA.UK)
+        -period - 1.1.2018/1.1.2023
+        -source- stooq.com, investing.com
+        -using daily closes
+    2)Processed the data in heatmap.ipynb and got the final correlation matrix using corr() function
+    3)Then i used the seaborn library to create heatmap - heatmap2.png, correlation_heatmap.png
+    4)At the end i played with ai and heatmap settings to create heatmap i like
+    5)link to visualization -
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 Sources:
 
 gold and silver data: stooq.com
-real dollar strenght data, inflation: https://fred.stlouisfed.org/series/FPCPITOTLZGUSA
+real dollar strength data, inflation: https://fred.stlouisfed.org/series/FPCPITOTLZGUSA
 
 final_dollar_vs_metals.csv - data for comparing dollar strenght with metal prices
 inflation_vs_metals - data for comparing inflation with metal prices
 merger_close_interpolated_df.csv - gold,silver,nasdaq,spx line chart
+final_corr_df - correlation for the past year with 30 day rolling window (gold,silver)
+heatmap2.png - final heatmap using seaborn
 
 
 correlation heatmap -

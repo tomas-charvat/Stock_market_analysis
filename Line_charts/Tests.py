@@ -19,6 +19,6 @@ def check_nulls(*dfs):
         i+=1
 
 
-print(check_nulls(xauusd,xagusd,ndq,spx,merged_close_interpolated_df))
+check_nulls(xauusd,xagusd,ndq,spx,merged_close_interpolated_df)
 
 
